@@ -3,75 +3,86 @@ import React from 'react'
 export default function Testimonial() {
   return (
     <>
-    <section>
-  <div className="row text-center">
-    <div className="col-md-12">
-      {/* <!-- Carousel wrapper --> */}
-      <div id="carouselBasicExample" data-mdb-carousel-init className="carousel slide carousel-dark" data-mdb-ride="carousel">
-        {/* <!-- Inner --> */}
-        <div className="carousel-inner">
-          {/* <!-- Single item --> */}
-          <div className="carousel-item active">
-            <p className="lead font-italic mx-4 mx-md-5">
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
-              numquam iure provident voluptate esse quasi, voluptas nostrum quisquam!"
-            </p>
-            <div className="mt-5 mb-4">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-                className="rounded-circle img-fluid shadow-1-strong" alt="smaple image" width="100"
-                height="100" />
+    <section id="testimonials" className="position-relative">
+      <div className="container">
+        <div className="row">
+          <div className="review-content position-relative">
+            <div className="swiper-icon swiper-arrow swiper-arrow-prev position-absolute d-flex align-items-center">
+              <svg className="chevron-left">
+                <use href="#chevron-left" />
+              </svg>
             </div>
-            <p className="text-muted mb-0">- Anna Morian</p>
-          </div>
-
-          {/* <!-- Single item --> */}
-          <div className="carousel-item">
-            <p className="lead font-italic mx-4 mx-md-5">
-              "Neque cupiditate assumenda in maiores repudiandae mollitia adipisci maiores
-              repudiandae mollitia consectetur adipisicing architecto elit sed adipiscing
-              elit."
-            </p>
-            <div className="mt-5 mb-4">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp"
-                className="rounded-circle img-fluid shadow-1-strong" alt="smaple image" width="100"
-                height="100" />
+            <div className="swiper testimonial-swiper">
+              <div className="quotation text-center">
+                <svg className="quote">
+                  <use href="#quote" />
+                </svg>
+              </div>
+              <div className="swiper-wrapper">
+                <div className="swiper-slide text-center d-flex justify-content-center">
+                  <div className="review-item col-md-10">
+                    <i className="icon icon-review"></i>
+                    <blockquote>“Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi.”</blockquote>
+                    <div className="rating">
+                      <svg className="star star-fill">
+                        <use href="#star-fill"></use>
+                      </svg>
+                      <svg className="star star-fill">
+                        <use href="#star-fill"></use>
+                      </svg>
+                      <svg className="star star-fill">
+                        <use href="#star-fill"></use>
+                      </svg>
+                      <svg className="star star-half">
+                        <use href="#star-half"></use>
+                      </svg>
+                      <svg className="star star-empty">
+                        <use href="#star-empty"></use>
+                      </svg>
+                    </div>
+                    <div className="author-detail">
+                      <div className="name text-dark text-uppercase pt-2">Emma Chamberlin</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="swiper-slide text-center d-flex justify-content-center">
+                  <div className="review-item col-md-10">
+                    <i className="icon icon-review"></i>
+                    <blockquote>“A blog is a digital publication that can complement a website or exist independently. A blog may include articles, short posts, listicles, infographics, videos, and other digital content.”</blockquote>
+                    <div className="rating">
+                      <svg className="star star-fill">
+                        <use href="#star-fill"></use>
+                      </svg>
+                      <svg className="star star-fill">
+                        <use href="#star-fill"></use>
+                      </svg>
+                      <svg className="star star-fill">
+                        <use href="#star-fill"></use>
+                      </svg>
+                      <svg className="star star-half">
+                        <use href="#star-half"></use>
+                      </svg>
+                      <svg className="star star-empty">
+                        <use href="#star-empty"></use>
+                      </svg>
+                    </div>
+                    <div className="author-detail">
+                      <div className="name text-dark text-uppercase pt-2">Jennie Rose</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <p className="text-muted mb-0">- Teresa May</p>
-          </div>
-
-          {/* <!-- Single item --> */}
-          <div className="carousel-item">
-            <p className="lead font-italic mx-4 mx-md-5">
-              "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur est laborum neque cupiditate assumenda in
-              maiores."
-            </p>
-            <div className="mt-5 mb-4">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
-                className="rounded-circle img-fluid shadow-1-strong" alt="smaple image" width="100"
-                height="100" />
+            <div className="swiper-icon swiper-arrow swiper-arrow-next position-absolute d-flex align-items-center">
+              <svg className="chevron-right">
+                <use href="#chevron-right" />
+              </svg>
             </div>
-            <p className="text-muted mb-0">- Kate Allise</p>
           </div>
         </div>
-        {/* <!-- Inner --> */}
-
-        {/* <!-- Controls --> */}
-        <button data-mdb-button-init className="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample"
-          data-mdb-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button data-mdb-button-init className="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample"
-          data-mdb-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
       </div>
-      {/* <!-- Carousel wrapper --> */}
-    </div>
-  </div>
-</section>
+      <div className="swiper-pagination"></div>
+    </section>
     </>
   )
 }

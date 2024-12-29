@@ -1,31 +1,3 @@
-// import React from 'react'
-
-// export default function Card(props) {
-//   return (
-//     <>
-//       {/* ---------cards new Design--------- */}
-//       <div class="col swiper-slide">
-//         <div class="product-card position-relative g-4">
-//           <div class="image-holder">
-//             <img src="{props.image}" alt="product-item" class="img-fluid" />
-//           </div>
-//           <div class="cart-concern position-absolute">
-//             <div class="cart-button d-flex">
-//               <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-//             </div>
-//           </div>
-//           <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-//             <h3 class="card-title text-uppercase">
-//               <a href="#">{props.title}</a>
-//             </h3>
-//             <span class="item-price text-primary">{props.description}</span>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-
 import React from 'react';
 
 export default function Card({ title, description, image, handleAddToCart }) {
@@ -163,20 +135,7 @@ export default function Card({ title, description, image, handleAddToCart }) {
       <div className="swiper-pagination position-absolute text-center"></div>
     </section> */}
 
-{/* ------------props cards------------ */ }
-{/* <div className="col">
-        <div className="card">
-          <img
-            src={props.image}
-            className="card-img-top"
-            alt={props.title}
-          />
-          <div className="card-body">
-            <h5 className="card-title">{props.title}</h5>
-            <p className="card-text">{props.description}</p>
-          </div>
-        </div>
-      </div> */}
+
 
 {/* <div className="swiper-slide">
                 <div className="product-card position-relative">

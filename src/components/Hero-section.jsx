@@ -60,7 +60,7 @@ export default function Herosection() {
         <div className="row">
           <div className="col-lg-3 col-md-6 pb-3">
             <div className="icon-box d-flex">
-              <div className="icon-box-icon pe-3 pb-3">
+              <div className="icon-box-icon pb-3">
                 <svg className="cart-outline">
                   <use href="#cart-outline" />
                 </svg>
