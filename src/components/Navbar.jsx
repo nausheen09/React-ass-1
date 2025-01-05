@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { MdMarkEmailRead } from "react-icons/md";
 import { GoSun } from "react-icons/go";
 import { FaMoon } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -75,7 +77,8 @@ export default function Navbar({ toggleTheme, isDarkMode }) {
                     <a className="nav-link me-4" href="#smart-watches">Watches</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link me-4" href="#yearly-sale">Sale</a>
+                    {/* <a className="nav-link me-4" href="#yearly-sale">Sale</a> */}
+                    <Link to="sale" className="nav-link me-4">Sale</Link>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link me-4" href="#latest-blog">Blog</a>
@@ -104,18 +107,19 @@ export default function Navbar({ toggleTheme, isDarkMode }) {
                     <a className="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="about.html" className="dropdown-item">About</a>
+                        {/* <a href="about.html" className="dropdown-item">About</a> */}
+                        <Link to="/about" className="dropdown-item">About</Link>
                       </li>
                       <li>
-                        <a href="blog.html" className="dropdown-item">Blog</a>
+                        <Link to="/service" className="dropdown-item">Services</Link>
                       </li>
                       <li>
-                        <a href="shop.html" className="dropdown-item">Shop</a>
+                        <Link to="/watche" className="dropdown-item">Watches</Link>
                       </li>
                       <li>
                         <a href="cart.html" className="dropdown-item">Cart</a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="checkout.html" className="dropdown-item">Checkout</a>
                       </li>
                       <li>
@@ -126,7 +130,7 @@ export default function Navbar({ toggleTheme, isDarkMode }) {
                       </li>
                       <li>
                         <a href="contact.html" className="dropdown-item">Contact</a>
-                      </li>
+                      </li> */}
                     </ul>
                   </li>
                   <li className="nav-item">
@@ -217,7 +221,6 @@ export default function Navbar({ toggleTheme, isDarkMode }) {
           </p>
         </div>
       )}
-
 
     </>
   )
